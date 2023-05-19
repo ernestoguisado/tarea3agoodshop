@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+    padding-inline-start: 0;
+}
+
+body {
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+}
+
+div.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    border-bottom: 1px solid #5e5c5c;
+}
+
+h2.header {
+    font-size: medium;
+}
+
+.menu ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem
+}
+
+a.contacto {
+    border: 2px solid #7c7c7c;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+main.oferta {
+    padding: 30px 10px 0 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div.imagen {
+    position: relative;
+}
+
+span.texto {
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    z-index: 2;
+}
+
+img.oferta {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    margin-right: 20px;
+    z-index: 1;
+}
+
+h5.oferta {
+    color: red;
+}
+
+div.letras {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+div.precio {
+    display: flex;
+    flex-direction: row;
+}
+
+button.comprar {
+    background-color: rgb(4, 70, 252);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+div.opciones {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.opciones ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+div.opciones li {
+    display: flex;
+    max-width: 100%;
+}
+
+section.accesorios{
+    padding: 0 10px;
+}
+
+div.accesorios {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+h2.accesorios {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+div.card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #999999;
+    border-radius: 8px;
+    flex-grow: 1;
+    max-width: 100%;
+    
+}
+
+
+
+img.card {
+    width: fit-content;
+}
+
+button.oferta {
+    background-color: rgb(252, 4, 4);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 12px;
+    font-size: 16px;
+}
+
+button.nuevo {
+    background-color: rgb(4, 111, 252);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 12px;
+    font-size: 16px;
+}
+
+section.formulario {
+    margin: 0 10px 50px 10px;
+    background-color: #dfdfdf;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.participa {
+    flex: 100%;
+    padding: 0 25px;
+}
+
+div.formulario {
+    flex: 100%;
+}
+
+h2.formulario {
+    font-size: 28px;
+}
+
+form {
+    border-radius: 20px;
+    padding: 20px;
+}
+
+form div {
+    margin-bottom: 5px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #bbbbbb;
+}
+
+button.boton-enviar {
+    background-color: rgb(4, 91, 252);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+div.footer {
+    text-align: center;
+    padding: 10px 0;
+}
+
+h2.footer {
+    font-size: 16px;
+}
+
+footer {
+    border-top: 1px solid #8b8b8b;
+}
+
+@media screen and (min-width: 800px) {
+    nav {
+        display: block;
+    }
+    .menu ul {
+        display: flex;
+    }
+    main.oferta, section.formulario, section.accesorios {
+        padding: 30px 50px 0 50px;
+    }
+
+    img.oferta {
+        max-width: 400px;
+        max-height: 360px;
+        width: auto;
+        height: auto;
+    }
+
+    div.letras {
+        max-width: 700px;
+    }
+
+    div.opciones li {
+        max-width: 30%;
+    }
+
+    div.card {
+        flex-basis: calc(25% - 10px);
+    }
+
+    section.formulario {
+    margin: 0 55px 0 55px
+    }
+    div.participa, div.formulario {
+        flex: 50%;
+    }
+}
